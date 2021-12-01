@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #191826;
+  font-weight: 400;
+  margin: 0;
+}
+
+body .equalizer-logo {
+  height: 3.2rem;
+}
+
+main {
+  outline: 1px solid red;
+  background-image: url("/assets/bg-main-mobile.png");
+  background-size: 100% 50rem;
+  background-repeat: no-repeat;
+  background-position: left 109px top -104px;
+}
+
+main .hero-section {
+  width: 88.49%;
+  margin: 0 auto;
+  margin-bottom: 6.8rem;
+  padding-top: 3.999rem;
+}
+
+main .hero-section .hero__main--heading {
+  font-size: 4rem;
+  letter-spacing: -0.454545px;
+  margin-top: 6.401rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+}
+
+main .hero-section .hero__main--text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+main .image-section {
+  width: 100%;
+  background-color: #191826;
+  border-radius: 1rem 1rem 0 0;
+  margin-top: 16.6rem;
+  position: relative;
+  background-image: url("/assets/bg-pattern-2.svg");
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 47rem;
+  z-index: -1;
+}
+
+main .image-section .mobile-app-image {
+  width: 22.5rem;
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .section__pricing {
+  color: #fcfaf9;
+  background-color: #fa7453;
+  border-radius: 1rem;
+  margin-top: -4.8rem;
+}
+
+main .section__pricing .section__pricing--content {
+  padding-top: 4.8rem;
+  width: 82%;
+  margin: 0 auto;
+}
+
+main .section__pricing .section__pricing--content .pricing__content--heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+main .section__pricing .section__pricing--content .pricing__content--text {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 3.6rem;
+}
+
+main .section__pricing .section__pricing--content .pricing__content--price {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+main .section__pricing .section__pricing--content .pricing__content--price .price__number {
+  font-size: 6.5rem;
+  font-weight: 700;
+  margin: 0 1.6rem 0 0;
+}
+
+main .section__pricing .section__pricing--content .pricing__content--buttons {
+  text-align: center;
+}
+
+main .section__pricing .section__pricing--content .pricing__content--buttons .ios-button,
+main .section__pricing .section__pricing--content .pricing__content--buttons .android-button {
+  display: inline-block;
+  border: none;
+  padding: 1.5rem 0rem;
+  width: 29.6rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  letter-spacing: -0.18px;
+  font-weight: 700;
+}
+
+main .section__pricing .section__pricing--content .pricing__content--buttons .ios-button .apple-icon,
+main .section__pricing .section__pricing--content .pricing__content--buttons .ios-button .android-icon,
+main .section__pricing .section__pricing--content .pricing__content--buttons .android-button .apple-icon,
+main .section__pricing .section__pricing--content .pricing__content--buttons .android-button .android-icon {
+  margin-right: 0.78rem;
+}
+
+main .section__pricing .section__pricing--content .pricing__content--buttons .ios-button {
+  background-color: #191826;
+  color: #fcfaf9;
+  margin-bottom: 1.6rem;
+}
+
+main .section__pricing .section__pricing--content .pricing__content--buttons .android-button {
+  margin-bottom: 4.8rem;
+}
+
+footer {
+  width: 88.49%;
+  margin: 6.399rem auto 8rem auto;
+}
+
+footer .footer-text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 6.4rem;
+  margin-top: 3.31rem;
+  padding-right: 3.5rem;
+}
+
+footer .footer-text .footer-text--email {
+  font-weight: bold;
+}
+
+footer .icons__facebook,
+footer .icons__instagram,
+footer .icons__twitter {
+  margin-right: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

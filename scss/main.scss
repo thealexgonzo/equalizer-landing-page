@@ -1,0 +1,172 @@
+// Variables
+$secondary-blue: #66e2dc;
+$secondary-orange: #fa7453;
+$secondary-yellow: #ffb964;
+$primary-light: #fcfaf9;
+$primary-dark: #191826;
+$font-family: "IBM Plex Sans", sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+
+// Generic properties
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family;
+  color: $primary-dark;
+  font-weight: $font-regular;
+  margin: 0;
+
+  .equalizer-logo {
+    height: 3.2rem;
+  }
+}
+
+// Mobile Display
+main {
+  outline: 1px solid red;
+
+  background-image: url("/assets/bg-main-mobile.png");
+  background-size: 100% 50rem;
+  background-repeat: no-repeat;
+  background-position: left 109px top -104px;
+
+  .hero-section {
+    width: 88.49%;
+    margin: 0 auto;
+    margin-bottom: 6.8rem;
+    padding-top: 3.999rem;
+    .hero__main--heading {
+      font-size: 4rem;
+      letter-spacing: -0.454545px;
+      margin-top: 6.401rem;
+      line-height: 4.8rem;
+      font-weight: $font-bold;
+    }
+    .hero__main--text {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+  .image-section {
+    width: 100%;
+    background-color: $primary-dark;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 16.6rem;
+    position: relative;
+    background-image: url("/assets/bg-pattern-2.svg");
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 47rem;
+    z-index: -1;
+
+    .mobile-app-image {
+      width: 22.5rem;
+      position: absolute;
+      left: 50%;
+      top: -20%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .section__pricing {
+    color: $primary-light;
+    background-color: $secondary-orange;
+    border-radius: 1rem;
+    margin-top: -4.8rem;
+
+    .section__pricing--content {
+      padding-top: 4.8rem;
+      width: 82%;
+      margin: 0 auto;
+
+      .pricing__content--heading {
+        font-size: 3.2rem;
+        font-weight: $font-bold;
+        margin-bottom: 3.2rem;
+      }
+
+      .pricing__content--text {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin-bottom: 3.6rem;
+      }
+
+      .pricing__content--price {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.2rem;
+
+        .price__number {
+          font-size: 6.5rem;
+          font-weight: $font-bold;
+          margin: 0 1.6rem 0 0;
+        }
+      }
+
+      .pricing__content--buttons {
+        text-align: center;
+
+        .ios-button,
+        .android-button {
+          display: inline-block;
+          border: none;
+          padding: 1.5rem 0rem;
+          width: 29.6rem;
+          border-radius: 1rem;
+          font-size: 1.8rem;
+          letter-spacing: -0.18px;
+          font-weight: $font-bold;
+
+          .apple-icon,
+          .android-icon {
+            margin-right: 0.78rem;
+          }
+        }
+
+        .ios-button {
+          background-color: $primary-dark;
+          color: $primary-light;
+          margin-bottom: 1.6rem;
+        }
+
+        .android-button {
+          margin-bottom: 4.8rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 88.49%;
+  margin: 6.399rem auto 8rem auto;
+
+  .footer-text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 6.4rem;
+    margin-top: 3.31rem;
+    padding-right: 3.5rem;
+
+    .footer-text--email {
+      font-weight: bold;
+    }
+  }
+
+  .icons__facebook,
+  .icons__instagram,
+  .icons__twitter {
+    margin-right: 2rem;
+  }
+}
