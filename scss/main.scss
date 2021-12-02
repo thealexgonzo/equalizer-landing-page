@@ -30,14 +30,12 @@ body {
   }
 }
 
-// Mobile Display
+// Mobile Display - 375px
 main {
-  outline: 1px solid red;
-
   background-image: url("/assets/bg-main-mobile.png");
-  background-size: 100% 50rem;
+  background-size: 60rem 85rem;
   background-repeat: no-repeat;
-  background-position: left 109px top -104px;
+  background-position: left 1px top -290px;
 
   .hero-section {
     width: 88.49%;
@@ -85,13 +83,14 @@ main {
     margin-top: -4.8rem;
 
     .section__pricing--content {
-      padding-top: 4.8rem;
+      padding: 4.8rem 0 4.8rem 0;
       width: 82%;
       margin: 0 auto;
 
       .pricing__content--heading {
         font-size: 3.2rem;
         font-weight: $font-bold;
+        margin-top: 0;
         margin-bottom: 3.2rem;
       }
 
@@ -116,21 +115,31 @@ main {
 
       .pricing__content--buttons {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
 
         .ios-button,
         .android-button {
-          display: inline-block;
+          display: flex;
+          justify-content: center;
+          // align-content: baseline;
+          align-items: center;
           border: none;
-          padding: 1.5rem 0rem;
+          padding: 2.1rem 0rem;
           width: 29.6rem;
           border-radius: 1rem;
           font-size: 1.8rem;
           letter-spacing: -0.18px;
           font-weight: $font-bold;
+          outline: 2px solid red;
 
           .apple-icon,
           .android-icon {
             margin-right: 0.78rem;
+            position: relative;
+            top: -3px;
           }
         }
 
@@ -141,7 +150,7 @@ main {
         }
 
         .android-button {
-          margin-bottom: 4.8rem;
+          background-color: $primary-light;
         }
       }
     }
@@ -170,3 +179,139 @@ footer {
     margin-right: 2rem;
   }
 }
+
+// Tablet Display - 768px
+
+@media (min-width: 600px) {
+  main {
+    background-position: left 17rem top -290px;
+
+    .pricing__content--buttons {
+      // display: flex;
+      outline: 1px solid red;
+      flex-direction: row;
+      // justify-content: space-between;
+
+      .ios-button,
+      .android-button {
+        height: 6.1rem;
+      }
+
+      .ios-button {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    background-image: url("/assets/bg-pattern-1.svg"),
+      url("/assets/bg-main-tablet.png");
+    background-size: 26rem 40rem, 110rem 120rem;
+    background-position: top -32px right -35px, left -300px top -250px;
+    .hero-section {
+      padding-top: 6.1rem;
+
+      .hero__main--heading {
+        font-size: 6.4rem;
+        letter-spacing: -0.73px;
+        width: 70%;
+        line-height: 6.4rem;
+        margin-top: 9.5rem;
+      }
+      .hero__main--text {
+        font-size: 1.8rem;
+        width: 75%;
+        line-height: 2.8rem;
+      }
+    }
+    .image-section {
+      max-width: 69rem;
+      margin: 24rem auto 0 auto;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-position: top -3rem left 22rem;
+      background-size: 28rem 42rem;
+      min-height: 60rem;
+
+      .mobile-app-image {
+        width: 27rem;
+        height: 55.6rem;
+        left: 19rem;
+        bottom: 18.2rem;
+      }
+    }
+    .section__pricing {
+      max-width: 39.9rem;
+      max-height: 54.6rem;
+      position: absolute;
+      top: 98.5rem;
+      left: 27.2rem;
+
+      .section__pricing--content {
+        width: 78%;
+        padding: 4.8rem 0;
+
+        .pricing__content--heading {
+          margin: 0 0 1.2rem 0;
+        }
+        .pricing__content--text {
+          margin: 0 0 1.2rem 0;
+        }
+        .pricing__content--price {
+          margin: 0 0 1.2rem 0;
+          align-self: flex-start;
+          margin-left: 1rem;
+        }
+        .tablet__dims--pricing {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+        }
+        .pricing__content--buttons {
+          display: inline;
+          width: 29.6rem;
+
+          .ios-button {
+            margin: 0 0 1.2rem 0;
+          }
+          .android-button {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    margin-top: 16.8rem;
+
+    .tablet__dims--footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      .footer-text {
+        width: 40rem;
+        margin-bottom: 0;
+      }
+
+      .social-media--icons {
+        display: inline-block;
+        margin-right: 0;
+        padding-right: 0;
+
+        .icons__twitter {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// Desktop Display - 1440px
