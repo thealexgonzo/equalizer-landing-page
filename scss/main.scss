@@ -17,6 +17,7 @@ $font-bold: 700;
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -24,19 +25,25 @@ body {
   color: $primary-dark;
   font-weight: $font-regular;
   margin: 0;
+  height: 100%;
 
   .equalizer-logo {
     height: 3.2rem;
+  }
+  .bg {
+    background-image: url("/assets/bg-main-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top -200px right -185px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
   }
 }
 
 // Mobile Display - 375px
 main {
-  background-image: url("/assets/bg-main-mobile.png");
-  background-size: 60rem 85rem;
-  background-repeat: no-repeat;
-  background-position: left 1px top -290px;
-
   .hero-section {
     width: 88.49%;
     margin: 0 auto;
@@ -81,6 +88,7 @@ main {
     background-color: $secondary-orange;
     border-radius: 1rem;
     margin-top: -4.8rem;
+    z-index: 2;
 
     .section__pricing--content {
       padding: 4.8rem 0 4.8rem 0;
@@ -114,7 +122,6 @@ main {
       }
 
       .pricing__content--buttons {
-        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -133,7 +140,6 @@ main {
           font-size: 1.8rem;
           letter-spacing: -0.18px;
           font-weight: $font-bold;
-          outline: 2px solid red;
 
           .apple-icon,
           .android-icon {
@@ -159,7 +165,8 @@ main {
 
 footer {
   width: 88.49%;
-  margin: 6.399rem auto 8rem auto;
+  margin: 6.399rem auto 0 auto;
+  padding-bottom: 8rem;
 
   .footer-text {
     font-size: 1.6rem;
@@ -184,32 +191,32 @@ footer {
 
 @media (min-width: 600px) {
   main {
-    background-position: left 17rem top -290px;
+    .section__pricing {
+      .section__pricing--content {
+        .pricing__content--buttons {
+          flex-direction: row;
+          align-items: center;
 
-    .pricing__content--buttons {
-      // display: flex;
-      outline: 1px solid red;
-      flex-direction: row;
-      // justify-content: space-between;
-
-      .ios-button,
-      .android-button {
-        height: 6.1rem;
-      }
-
-      .ios-button {
-        margin-right: 1rem;
+          .ios-button {
+            margin: 0 1rem 0 0;
+          }
+        }
       }
     }
   }
 }
 
 @media (min-width: 700px) {
+  body {
+    .bg {
+      background-image: url("/assets/bg-pattern-1.svg"),
+        url("/assets/bg-main-tablet.png");
+      background-size: 26rem 40rem, 110rem 120rem;
+      background-position: top -32px right -35px, left -220px top -290px;
+      height: 200%;
+    }
+  }
   main {
-    background-image: url("/assets/bg-pattern-1.svg"),
-      url("/assets/bg-main-tablet.png");
-    background-size: 26rem 40rem, 110rem 120rem;
-    background-position: top -32px right -35px, left -300px top -250px;
     .hero-section {
       padding-top: 6.1rem;
 
@@ -315,3 +322,113 @@ footer {
 }
 
 // Desktop Display - 1440px
+@media (min-width: 800px) {
+  body {
+    .bg {
+      background-image: url("/assets/bg-pattern-1.svg"),
+        url("/assets/bg-main-desktop.png");
+      background-size: 26rem 40rem, 140% 120%;
+      background-position: top -32px right 0px, left -300px top -250px;
+    }
+  }
+
+  main {
+    .image-section {
+      min-width: 80%;
+    }
+
+    .section__pricing {
+      left: 33rem;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    .section__pricing {
+      left: 35rem;
+      top: 96rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    .hero-section {
+      margin-left: 16.5rem;
+      margin-bottom: 10.8rem;
+      .hero__main--heading {
+        font-size: 8.8rem;
+        letter-spacing: -1px;
+        width: 75%;
+        line-height: 8.8rem;
+        margin: 12.701rem 0 4rem 0;
+      }
+      .hero__main--text {
+        font-size: 2rem;
+        width: 65%;
+        line-height: 3.4rem;
+      }
+    }
+    .image-section {
+      min-width: 111rem;
+      margin: 32.1rem auto 0 auto;
+      padding: 0;
+      background-position: top -3rem left 34.5rem;
+      background-size: 31.1rem 46.8rem;
+      max-height: 60rem;
+
+      .mobile-app-image {
+        width: 31.2rem;
+        height: 64.2rem;
+        left: 26.7rem;
+        top: -22rem;
+      }
+    }
+    .section__pricing {
+      max-width: 44.6rem;
+      min-height: 62.5rem;
+      top: 98.5rem;
+      left: 73.4rem;
+
+      .section__pricing--content {
+        // width: 78%;
+        // padding: 4.8rem 0;
+
+        .pricing__content--heading {
+          font-size: 4rem;
+        }
+        .pricing__content--text {
+          font-size: 2rem;
+          line-height: 3.4rem;
+        }
+        // .pricing__content--price {
+        //   outline: 2px solid red;
+        //   margin: 0 0 1.2rem 0;
+        //   align-self: flex-start;
+        //   margin-left: 1rem;
+        //   font-size: 2rem;
+        // }
+        // .tablet__dims--pricing {
+        //   display: flex;
+        //   flex-direction: column;
+        //   align-items: center;
+        //   padding: 0;
+        //   margin: 0;
+        //   font-size: 6.5rem;
+        // }
+        // .pricing__content--buttons {
+        //   display: inline;
+        //   width: 29.6rem;
+
+        //   .ios-button {
+        //     margin: 0 0 1.2rem 0;
+        //   }
+        //   .android-button {
+        //     margin-bottom: 0;
+        //   }
+        // }
+      }
+    }
+  }
+}
