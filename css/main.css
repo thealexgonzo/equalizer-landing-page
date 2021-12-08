@@ -33,6 +33,12 @@ body .bg {
   z-index: -2;
 }
 
+body .icons__facebook,
+body .icons__instagram,
+body .icons__twitter {
+  fill: #191826;
+}
+
 main .hero-section {
   width: 88.49%;
   margin: 0 auto;
@@ -71,7 +77,7 @@ main .image-section .mobile-app-image {
   width: 22.5rem;
   position: absolute;
   left: 50%;
-  top: -20%;
+  margin-top: -10rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -221,6 +227,7 @@ footer .icons__twitter {
   }
   main .hero-section {
     padding-top: 6.1rem;
+    margin-bottom: 24rem;
   }
   main .hero-section .hero__main--heading {
     font-size: 6.4rem;
@@ -235,8 +242,8 @@ footer .icons__twitter {
     line-height: 2.8rem;
   }
   main .image-section {
-    max-width: 69rem;
-    margin: 24rem auto 0 auto;
+    width: 90%;
+    margin: 0 auto;
     padding: 1rem;
     border-radius: 1rem;
     background-position: top -3rem left 22rem;
@@ -247,18 +254,16 @@ footer .icons__twitter {
     width: 27rem;
     height: 55.6rem;
     left: 19rem;
-    bottom: 18.2rem;
+    margin-top: -16rem;
   }
   main .section__pricing {
     max-width: 39.9rem;
-    max-height: 54.6rem;
     position: absolute;
-    top: 98.5rem;
-    left: 27.2rem;
+    right: 9.7rem;
+    top: 97.5rem;
   }
   main .section__pricing .section__pricing--content {
     width: 78%;
-    padding: 4.8rem 0;
   }
   main .section__pricing .section__pricing--content .pricing__content--heading {
     margin: 0 0 1.2rem 0;
@@ -327,36 +332,35 @@ footer .icons__twitter {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 899px) {
+  main .section__pricing {
+    top: 95rem;
+  }
+}
+
+@media (min-width: 988px) {
+  main .section__pricing {
+    top: 89rem;
+  }
+}
+
+@media (min-width: 1000px) {
   body .bg {
     background-image: url("/assets/bg-pattern-1.svg"), url("/assets/bg-main-desktop.png");
-    background-size: 26rem 40rem, 140% 120%;
-    background-position: top -32px right 0px, left -300px top -250px;
-  }
-  main .image-section {
-    min-width: 80%;
-  }
-  main .section__pricing {
-    left: 33rem;
+    background-size: 26rem 40rem, 150% 120%;
+    background-position: right 0px top -40px, left -460px top -30rem;
+    height: 220%;
   }
 }
 
-@media (min-width: 900px) {
-  main .section__pricing {
-    left: 35rem;
-    top: 96rem;
-  }
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
   main .hero-section {
-    margin-left: 16.5rem;
-    margin-bottom: 10.8rem;
+    width: 80%;
   }
   main .hero-section .hero__main--heading {
     font-size: 8.8rem;
     letter-spacing: -1px;
-    width: 75%;
+    width: 80%;
     line-height: 8.8rem;
     margin: 12.701rem 0 4rem 0;
   }
@@ -366,31 +370,78 @@ footer .icons__twitter {
     line-height: 3.4rem;
   }
   main .image-section {
-    min-width: 111rem;
+    width: 80%;
     margin: 32.1rem auto 0 auto;
     padding: 0;
     background-position: top -3rem left 34.5rem;
     background-size: 31.1rem 46.8rem;
-    max-height: 60rem;
+    height: 64rem;
   }
   main .image-section .mobile-app-image {
     width: 31.2rem;
     height: 64.2rem;
     left: 26.7rem;
-    top: -22rem;
   }
   main .section__pricing {
     max-width: 44.6rem;
-    min-height: 62.5rem;
-    top: 98.5rem;
-    left: 73.4rem;
+    right: 26rem;
+    top: 101.5rem;
   }
   main .section__pricing .section__pricing--content .pricing__content--heading {
     font-size: 4rem;
+    margin-bottom: 2.2rem;
   }
   main .section__pricing .section__pricing--content .pricing__content--text {
     font-size: 2rem;
     line-height: 3.4rem;
+    margin-bottom: 3.9rem;
+  }
+  main .section__pricing .section__pricing--content .pricing__content--price {
+    margin-bottom: 4.6rem;
+  }
+  main .section__pricing .section__pricing--content .desktop__dims--pricing .pricing__content--buttons {
+    width: 33.3rem;
+  }
+  main .section__pricing .section__pricing--content .desktop__dims--pricing .pricing__content--buttons .ios-button {
+    width: 100%;
+  }
+  main .section__pricing .section__pricing--content .desktop__dims--pricing .pricing__content--buttons .ios-button:hover {
+    cursor: pointer;
+    background-color: #66e2dc;
+  }
+  main .section__pricing .section__pricing--content .desktop__dims--pricing .pricing__content--buttons .android-button {
+    width: 100%;
+  }
+  main .section__pricing .section__pricing--content .desktop__dims--pricing .pricing__content--buttons .android-button:hover {
+    cursor: pointer;
+    background-color: #ffb964;
+  }
+  footer {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0 0 9.1rem 0;
+    margin-top: 20.2rem;
+    margin-bottom: 9.1rem;
+  }
+  footer .desktop__dims--footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 13.7rem;
+    padding: 0;
+  }
+  footer .desktop__dims--footer .footer-text {
+    margin-top: 0;
+  }
+  footer .desktop__dims--footer .social-media--icons .icons__facebook:hover,
+  footer .desktop__dims--footer .social-media--icons .icons__instagram:hover,
+  footer .desktop__dims--footer .social-media--icons .icons__twitter:hover {
+    fill: #fa7453;
   }
 }
 /*# sourceMappingURL=main.css.map */
