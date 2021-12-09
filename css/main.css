@@ -23,7 +23,7 @@ body .equalizer-logo {
 }
 
 body .bg {
-  background-image: url("/assets/bg-main-mobile.png");
+  background-image: url("../assets/bg-main-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top -200px right -185px;
@@ -65,7 +65,7 @@ main .image-section {
   border-radius: 1rem 1rem 0 0;
   margin-top: 16.6rem;
   position: relative;
-  background-image: url("/assets/bg-pattern-2.svg");
+  background-image: url("../assets/bg-pattern-2.svg");
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -220,7 +220,7 @@ footer .icons__twitter {
 
 @media (min-width: 700px) {
   body .bg {
-    background-image: url("/assets/bg-pattern-1.svg"), url("/assets/bg-main-tablet.png");
+    background-image: url("../assets/bg-pattern-1.svg"), url("../assets/bg-main-tablet.png");
     background-size: 26rem 40rem, 110rem 120rem;
     background-position: top -32px right -35px, left -220px top -290px;
     height: 200%;
@@ -346,7 +346,7 @@ footer .icons__twitter {
 
 @media (min-width: 1000px) {
   body .bg {
-    background-image: url("/assets/bg-pattern-1.svg"), url("/assets/bg-main-desktop.png");
+    background-image: url("../assets/bg-pattern-1.svg"), url("../assets/bg-main-desktop.png");
     background-size: 26rem 40rem, 150% 120%;
     background-position: right 0px top -40px, left -460px top -30rem;
     height: 220%;
