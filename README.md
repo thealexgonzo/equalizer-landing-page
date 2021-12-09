@@ -1,4 +1,4 @@
-# Equalizer landing page solution
+# Equalizer landing page
 
 ## Table of contents
 
@@ -12,7 +12,6 @@
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
